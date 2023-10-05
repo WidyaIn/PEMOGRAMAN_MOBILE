@@ -152,18 +152,51 @@ Ubah isi kode main.dart seperti berikut.
 
 ![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/53187c2c-d650-4c4e-8076-61450da5807d)
 
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/e67f28da-fab7-4358-9236-11ac518f8a9f)
+
 ## Langkah 4: Dialog Widget
 Dialog widget pada flutter memiliki dua jenis dialog yaitu AlertDialog dan SimpleDialog.
 
 Ubah isi kode main.dart seperti berikut.
 
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/d9d010a5-3417-41f5-b6de-a5b96630b1b5)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/94d84891-54f1-45e9-828e-89d662c7a8fc)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/089ef0db-818d-45c3-bb69-a4e010b9ea4f)
+
+## Langkah 5: Input dan Selection Widget
+
+Flutter menyediakan widget yang dapat menerima input dari pengguna aplikasi yaitu antara lain Checkbox, Date and Time Pickers, Radio Button, Slider, Switch, TextField.
+
+Contoh penggunaan TextField widget adalah sebagai berikut:
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/93b2c63a-883e-4408-a4ee-cc5c9fa5bbc8)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/b8664a81-3291-4a30-8cca-e573ded8d069)
+
+## Langkah 6: Date and Time Pickers
+
+Date and Time Pickers termasuk pada kategori input dan selection widget, berikut adalah contoh penggunaan Date and Time Pickers.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/07817438-71b6-49c6-8149-bb6178c6e74e)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/dfb9b741-0d80-40da-9838-4bb248902ae0)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/07b31f16-0df2-4ad9-a9a0-037a3d20f772)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/da72aabf-f307-4a4d-b568-5ff64e4ae139)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/207d379e-d359-4de0-9c9e-54aa4cf53c4f)
 
 
+# 10. Tugas Praktikum
 
-
-
-
-
+## 1. Selesaikan Praktikum 1 sampai 4, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md!
+## 2. Pada praktikum 4 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri di folder basic_widgets, kemudian pada file main.dart cukup melakukan import widget sesuai masing-masing langkah tersebut!
+## 3. Selesaikan Codelabs: Your first Flutter app, lalu buatlah laporan praktikumnya dan push ke repository GitHub Anda!
+## 4. README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) di browser dan perangkat fisik (device) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda. Jika mode developer di perangkat HP Anda belum aktif, silakan cari di internet cara mengaktifkannya!
+## 5. Kumpulkan berupa link repository/commit GitHub Anda ke tautan spreadsheet yang telah disepakati oleh dosen!
 
 
 
