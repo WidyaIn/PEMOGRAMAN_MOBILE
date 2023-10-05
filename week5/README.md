@@ -113,6 +113,52 @@ Lakukan import file text_widget.dart ke main.dart, lalu ganti bagian text widget
 
 Buat sebuah file image_widget.dart di dalam folder basic_widgets dengan isi kode berikut.
 
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/acfbc1d9-0274-4521-a33c-e3617044d9d9)
+
+Lakukan penyesuaian asset pada file pubspec.yaml dan tambahkan file logo Anda di folder assets project hello_world.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/cccaa706-5e8b-4053-8b67-5056cca56a9e)
+
+
+Jangan lupa sesuaikan kode dan import di file main.dart kemudian akan tampil gambar seperti berikut.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/e7e31ee0-2cac-4902-8e51-222b659601a2)
+
+# Praktikum 4: Menerapkan Widget Material Design dan iOS Cupertino
+
+## Langkah 1: Cupertino Button dan Loading Bar
+
+Buat file di basic_widgets > loading_cupertino.dart. Import stateless widget dari material dan cupertino. Lalu isi kode di dalam method Widget build adalah sebagai berikut.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/9247d3f1-9e2d-4f83-b502-070e4f7db988)
+
+## Langkah 2: Floating Action Button (FAB)
+
+Button widget terdapat beberapa macam pada flutter yaitu ButtonBar, DropdownButton, TextButton, FloatingActionButton, IconButton, OutlineButton, PopupMenuButton, dan ElevatedButton.
+
+Buat file di basic_widgets > fab_widget.dart. Import stateless widget dari material. Lalu isi kode di dalam method Widget build adalah sebagai berikut.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/34645399-a25f-4716-ad65-0d67729bf4f9)
+
+## Langkah 3: Scaffold Widget
+
+Scaffold widget digunakan untuk mengatur tata letak sesuai dengan material design.
+
+Ubah isi kode main.dart seperti berikut.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/c8e743f6-22cc-4fa1-bbeb-ea5a8dfb0fe1)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/999d9b9a-9922-40ab-909a-d4f1bce8d749)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/53187c2c-d650-4c4e-8076-61450da5807d)
+
+## Langkah 4: Dialog Widget
+Dialog widget pada flutter memiliki dua jenis dialog yaitu AlertDialog dan SimpleDialog.
+
+Ubah isi kode main.dart seperti berikut.
+
+
+
 
 
 
