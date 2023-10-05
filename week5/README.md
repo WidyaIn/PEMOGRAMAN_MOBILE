@@ -75,9 +75,44 @@ Salin tautan repository Anda dari browser ke bagian ini, lalu klik Add remote
 
 Lakukan hal yang sama pada file README.md mulai dari Langkah 4. Setelah berhasil melakukan push, masukkan username GitHub Anda dan password berupa token yang telah dibuat (pengganti password konvensional ketika Anda login di browser GitHub). 
 
-# Langkah 10:
+## Langkah 10:
 
 Lakukan push juga untuk semua file lainnya dengan pilih Stage All Changes. Beri pesan commit "project hello_world". Maka akan tampil di repository GitHub Anda seperti berikut.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/8a2b8606-9687-4c69-9912-e8624389f072)
+
+## Langkah 11:
+
+Kembali ke VS Code, ubah platform di pojok kanan bawah ke emulator atau device atau bisa juga menggunakan browser Chrome. Lalu coba running project hello_world dengan tekan F5 atau Run > Start Debugging. Tunggu proses kompilasi hingga selesai, maka aplikasi flutter pertama Anda akan tampil seperti berikut.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/e1dccd24-e893-4578-97a3-2745e09bd377)
+
+## Langkah 12:
+
+Silakan screenshot seperti pada Langkah 11, namun teks yang ditampilkan dalam aplikasi berupa nama lengkap Anda. Simpan file screenshot dengan nama 01.png pada folder images (buat folder baru jika belum ada) di project hello_world Anda. Lalu ubah isi README.md seperti berikut, sehingga tampil hasil screenshot pada file README.md. Kemudian push ke repository Anda.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/b1213a86-846c-4b4c-98cd-6ec4fbf14aa3)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/9d7e266b-99d9-4689-8b16-79af67150f94)
+
+# Praktikum 3: Menerapkan Widget Dasar
+
+## Langkah 1: Text Widget
+
+Buat folder baru basic_widgets di dalam folder lib. Kemudian buat file baru di dalam basic_widgets dengan nama text_widget.dart. Ketik atau salin kode program berikut ke project hello_world Anda pada file text_widget.dart.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/219e5748-d23b-4f8b-9a93-1a3ee2191f97)
+
+Lakukan import file text_widget.dart ke main.dart, lalu ganti bagian text widget dengan kode di atas. Maka hasilnya seperti gambar berikut. Screenshot hasil milik Anda, lalu dibuat laporan pada file README.md.
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/05e65e85-3653-48c3-b6c1-0180d51e69f0)
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/9f777311-4346-48e1-9272-280cd9af8857)
+
+## Langkah 2: Image Widget
+
+Buat sebuah file image_widget.dart di dalam folder basic_widgets dengan isi kode berikut.
+
 
 
 
