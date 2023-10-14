@@ -61,9 +61,10 @@ Apakah tata letaknya menyertakan kisi-kisi (grid)?
 Apakah ada elemen yang tumpang tindih?
 Apakah UI memerlukan tab?
 Perhatikan area yang memerlukan alignment, padding, atau borders.
-Langkah 4: Implementasi Title Row
-Pertama, membuat kolom bagian kiri pada judul dengan menambahkan kode berikut di bagian atas metode build() di dalam kelas MyApp:
 
+###  Langkah 4: Implementasi Title Row
+Pertama, membuat kolom bagian kiri pada judul dengan menambahkan kode berikut di bagian atas metode build() di dalam kelas `MyApp`:
+```Javascript
 Widget titleSection = Container(
   padding: const EdgeInsets.all(...),
   child: Row(
@@ -99,14 +100,17 @@ Widget titleSection = Container(
     ],
   ),
 );
-Soal 1 Letakkan widget Column di dalam widget Expanded agar menyesuaikan ruang yang tersisa di dalam widget Row. Tambahkan properti crossAxisAlignment ke CrossAxisAlignment.start sehingga posisi kolom berada di awal baris.
+```
 
-Soal 2 Letakkan baris pertama teks di dalam Container sehingga memungkinkan Anda untuk menambahkan padding = 8. Teks ‘Batu, Malang, Indonesia' di dalam Column, set warna menjadi abu-abu.
+**Soal 1** Letakkan widget `Column` di dalam widget `Expanded` agar menyesuaikan ruang yang tersisa di dalam widget `Row`. Tambahkan properti `crossAxisAlignment` ke `CrossAxisAlignment.start` sehingga posisi kolom berada di awal baris.
 
-Soal 3 Dua item terakhir di baris judul adalah ikon bintang, set dengan warna merah, dan teks "41". Seluruh baris ada di dalam Container dan beri padding di sepanjang setiap tepinya sebesar 32 piksel. Kemudian ganti isi body text ‘Hello World' dengan variabel titleSection seperti berikut:
+**Soal 2** Letakkan baris pertama teks di dalam `Container` sehingga memungkinkan Anda untuk menambahkan padding = 8. Teks `‘Batu, Malang, Indonesia'` di dalam `Column`, set warna menjadi abu-abu.
 
-Jawaban:
-Kode Lengkap
+**Soal 3** Dua item terakhir di baris judul adalah ikon bintang, set dengan warna merah, dan teks "41". Seluruh baris ada di dalam `Container` dan beri padding di sepanjang setiap tepinya sebesar 32 piksel. Kemudian ganti isi `body text ‘Hello World'` dengan variabel `titleSection` seperti berikut:
+
+### Jawaban:
+### **Kode Lengkap**
+```Javascript
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -169,15 +173,20 @@ class MyApp extends StatelessWidget {
     );
   }
  }
-Hasil
-Screenshot
 
-Praktikum 2: Implementasi Button Row
-Langkah 1: Buat method Column _buildButtonColumn
+```
+### Hasil
+<img src="./docs/p1-hasil.jpg" alt="Screenshot" height="600">
+
+## **Praktikum 2: Implementasi Button Row**
+
+###  Langkah 1: Buat method Column _buildButtonColumn
+
 Bagian tombol berisi 3 kolom yang menggunakan tata letak yang sama—sebuah ikon di atas baris teks. Kolom pada baris ini diberi jarak yang sama, dan teks serta ikon diberi warna primer.
 
-Karena kode untuk membangun setiap kolom hampir sama, buatlah metode pembantu pribadi bernama buildButtonColumn(), yang mempunyai parameter warna, Icon dan Text, sehingga dapat mengembalikan kolom dengan widgetnya sesuai dengan warna tertentu.
+Karena kode untuk membangun setiap kolom hampir sama, buatlah metode pembantu pribadi bernama `buildButtonColumn()`, yang mempunyai parameter warna, `Icon` dan `Text`, sehingga dapat mengembalikan kolom dengan widgetnya sesuai dengan warna tertentu.
 
+```Javascript
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -207,7 +216,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Jawaban:
+```
+### Jawaban:
+
+```Javascript
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -292,11 +304,14 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Langkah 2: Buat widget buttonSection
-Menambhkan Fungsi untuk menambahkan ikon langsung ke kolom. Teks berada di dalam Container dengan margin hanya di bagian atas, yang memisahkan teks dari ikon.
+```
 
-Membangun baris yang berisi kolom-kolom ini dengan memanggil fungsi dan set warna, Icon, dan teks khusus melalui parameter ke kolom tersebut. Sejajarkan kolom di sepanjang sumbu utama menggunakan MainAxisAlignment.spaceEvenly untuk mengatur ruang kosong secara merata sebelum, di antara, dan setelah setiap kolom. Menambahkan kode berikut tepat di bawah deklarasi titleSection di dalam metode build():
+### Langkah 2: Buat widget buttonSection
+Menambhkan Fungsi untuk menambahkan ikon langsung ke kolom. Teks berada di dalam `Container` dengan margin hanya di bagian atas, yang memisahkan teks dari ikon.
 
+Membangun baris yang berisi kolom-kolom ini dengan memanggil fungsi dan set warna, `Icon`, dan teks khusus melalui parameter ke kolom tersebut. Sejajarkan kolom di sepanjang sumbu utama menggunakan `MainAxisAlignment.spaceEvenly` untuk mengatur ruang kosong secara merata sebelum, di antara, dan setelah setiap kolom. Menambahkan kode berikut tepat di bawah deklarasi `titleSection` di dalam metode `build()`:
+
+```Javascript
 Color color = Theme.of(context).primaryColor;
 
 Widget buttonSection = Row(
@@ -306,9 +321,11 @@ Widget buttonSection = Row(
     _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
     _buildButtonColumn(color, Icons.share, 'SHARE'),
   ],
-Langkah 3: Tambah button section ke body
-Menambahkan variabel buttonSection ke dalam body seperti berikut:
+  ```
 
+### Langkah 3: Tambah button section ke body
+Menambahkan variabel buttonSection ke dalam `body` seperti berikut:
+```Javascript         
       child: Text('Hello World'),            
       body: Column(            
       children: [            
@@ -317,13 +334,15 @@ Menambahkan variabel buttonSection ke dalam body seperti berikut:
       buttonSection,            
       ],            
     ),            
-Hasil
-Screenshot
+```
+### Hasil
+<img src="./docs/p2-hasil.jpg" alt="Screenshot" height="600">
 
-Praktikum 3: Implementasi Text Section
-Langkah 1: Buat widget textSection
-Tentukan bagian teks sebagai variabel. Masukkan teks ke dalam Container dan tambahkan padding di sepanjang setiap tepinya. Tambahkan kode berikut tepat di bawah deklarasi buttonSection:
+## **Praktikum 3: Implementasi Text Section**
 
+### Langkah 1: Buat widget textSection
+Tentukan bagian teks sebagai variabel. Masukkan teks ke dalam `Container` dan tambahkan padding di sepanjang setiap tepinya. Tambahkan kode berikut tepat di bawah deklarasi `buttonSection`:
+```Javascript
 Widget textSection = Container(
   padding: const EdgeInsets.all(32),
   child: const Text(
@@ -334,7 +353,9 @@ Widget textSection = Container(
     softWrap: true,
   ),
 );
-Jawaban:
+```
+### Jawaban:
+```Javascript
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
@@ -344,9 +365,11 @@ Jawaban:
         textAlign: TextAlign.justify,
       ),
     );
-Langkah 2: Tambahkan Variabel Text Section ke Body
-Tambahkan widget variabel textSection ke dalam body seperti berikut:
+```
 
+### Langkah 2: Tambahkan Variabel **Text Section** ke Body
+Tambahkan widget variabel `textSection` ke dalam `body` seperti berikut:
+```Javascript         
       child: Text('Hello World'),            
       body: Column(            
       children: [            
@@ -357,17 +380,22 @@ Tambahkan widget variabel textSection ke dalam body seperti berikut:
       textSection,         
       ],            
     ),            
-Hasil
-Screenshot
+```
 
-Praktikum 3: Implementasi Image Section
-Langkah 1: Siapkan Aset Gambar
-Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder images di root project layout_flutter. Masukkan file gambar tersebut ke folder images, lalu set nama file tersebut ke file pubspec.yaml seperti berikut:
+### Hasil
+<img src="./docs/p3-hasil.jpg" alt="Screenshot" height="600">
 
+## **Praktikum 3: Implementasi Image Section**
+
+### Langkah 1: Siapkan Aset Gambar
+Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder `images` di root project **layout_flutter**. Masukkan file gambar tersebut ke folder `images`, lalu set nama file tersebut ke file `pubspec.yaml` seperti berikut:
+```Javascript
   uses-material-design: true
   assets:
     - assets/gunung_panderman.jpg
-Langkah 2: Tambahkan gambar ke body
+```
+### Langkah 2: Tambahkan gambar ke body
+```Javascript
         body: Column(
           children: [
             /*Add Image Section*/
@@ -383,7 +411,10 @@ Langkah 2: Tambahkan gambar ke body
             textSection,
           ],
         ),
-Langkah 3: Ubah Menjadi ListView
+```
+
+### Langkah 3: Ubah Menjadi ListView
+```Javascript
         body: ListView( /*Change to ListView*/
           children: [
             /*Add Image Section*/
@@ -399,18 +430,20 @@ Langkah 3: Ubah Menjadi ListView
             textSection,
           ],
         ),
-Hasil
-Screenshot
+```
+### Hasil
+<img src="./docs/p4-hasil.jpg" alt="Screenshot" height="600">
 
-Tugas Praktikum
-Selesaikan Praktikum 1 sampai 4, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md!
-Jawaban:
+# **Tugas Praktikum**
+
+1. Selesaikan Praktikum 1 sampai 4, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file `README.md`!
+### Jawaban: 
 Done
 
-Silakan implementasikan di project baru "basic_layout_flutter" dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
-Jawaban:
-Basic Layout Flutter - Lailatul Badriyah.
+2. Silakan implementasikan di project baru **"basic_layout_flutter"** dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
+### Jawaban:
+[Basic Layout Flutter - Lailatul Badriyah](https://github.com/lailatulbadriyah24/2141720036-mobile-2023/blob/main/week-07/src/basic_layout_flutter/README.md).
 
-Kumpulkan link commit repository GitHub Anda ke spreadsheet yang telah disediakan!
-Jawaban:
+3. Kumpulkan link commit repository GitHub Anda ke spreadsheet yang telah disediakan!
+### Jawaban: 
 Done
