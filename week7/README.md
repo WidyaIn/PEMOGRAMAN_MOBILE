@@ -24,31 +24,6 @@ Buatlah sebuah project flutter baru dengan nama layout_flutter. Atau sesuaikan s
 
 Buka file main.dart lalu ganti dengan kode berikut. Isi nama dan NIM Anda di text title.
 
-import 'package:flutter/material.dart';
-
-void main() => runApp(const MyApp());
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter layout: Nama dan NIM Anda',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter layout demo'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
-    );
-  }
-}
-Jawaban:
-Hasil
-
 ![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/09148d51-ef2f-45e1-a46f-80e009938764)
 
 ![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/df4c1fa9-3efc-410e-820e-f6c26329377e)
@@ -57,13 +32,18 @@ Hasil
 Langkah pertama adalah memecah tata letak menjadi elemen dasarnya:
 
 Identifikasi baris dan kolom.
+
 Apakah tata letaknya menyertakan kisi-kisi (grid)?
+
 Apakah ada elemen yang tumpang tindih?
+
 Apakah UI memerlukan tab?
+
 Perhatikan area yang memerlukan alignment, padding, atau borders.
 
 ###  Langkah 4: Implementasi Title Row
 Pertama, membuat kolom bagian kiri pada judul dengan menambahkan kode berikut di bagian atas metode build() di dalam kelas `MyApp`:
+
 ```Javascript
 Widget titleSection = Container(
   padding: const EdgeInsets.all(...),
@@ -159,7 +139,7 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Flutter layout: Lailatul Badriyah - 2141720036',
+      title: 'Flutter layout: Widya Indah Puspita Sari - 2141720034',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
@@ -176,7 +156,7 @@ class MyApp extends StatelessWidget {
 
 ```
 ### Hasil
-<img src="./docs/p1-hasil.jpg" alt="Screenshot" height="600">
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/a03ed865-7117-4089-98ed-c476a7d5a1c2)
 
 ## **Praktikum 2: Implementasi Button Row**
 
@@ -242,7 +222,7 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
-                    'Wisata Gunung di Batu',
+                    'Wisata Air Terjun Coban Rondo',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -268,7 +248,7 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Flutter layout: Lailatul Badriyah - 2141720036',
+      title: 'Flutter layout: Widya Indah Puspita Sari - 2141720034',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
@@ -336,7 +316,8 @@ Menambahkan variabel buttonSection ke dalam `body` seperti berikut:
     ),            
 ```
 ### Hasil
-<img src="./docs/p2-hasil.jpg" alt="Screenshot" height="600">
+
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/71cdf7ee-b978-448a-aeb1-3f0f37cbb266)
 
 ## **Praktikum 3: Implementasi Text Section**
 
@@ -349,7 +330,7 @@ Widget textSection = Container(
     'Carilah teks di internet yang sesuai '
     'dengan foto atau tempat wisata yang ingin '
     'Anda tampilkan. '
-    'Lailatul Badriyah - 2141720036',
+    'Widya Indah Puspita Sari - 2141720034',
     softWrap: true,
   ),
 );
@@ -359,8 +340,14 @@ Widget textSection = Container(
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
-        'Gunung Panderman bisa dijadikan puncak pertama yang ditaklukan bagi Anda para pendaki pemula. Di sini, wisatawan bisa melakukan pendakian ringan ke gunung dengan ketinggian 2.045 mdpl. Gunung Panderman termasuk bagian Pegunungan Putri Tidur bersama Gunung Kawi dan Gunung Butak. Pendakian ke Gunung Panderman bisa dimulai dari basecamp resminya. Durasi pendakian akan memakan waktu kurang lebih tiga jam dengan tiga pos sebelum tiba di puncaknya, Puncak Basundara. Puncak Gunung Panderman terbilang luas, cocok untuk berkamping sembari menikmati megahnya pegunungan Arjuna-Welirang tanpa halangan apa pun.\n\n'
-        'Lailatul Badriyah - 2141720036',
+        'Tempat wisata Alam yang satu ini cocok bagi para pecinta alam. Coban Rondo merupakan air terjun setinggi 84 meter yang terletak di '
+          'ketinggian 1.135 mdpl. Menurut cerita masyarakat sekitar, nama Coban Rondo berasal dari kisah pernikahan Dewi Anjarwati dari '
+          'Gunung Kawi dengan Raden Baron Kusuma dari Gunung Anjasmoro.'
+          'Selain bisa menikmati keindahan dan kesegaran air terjun, Anda juga bisa menikmati berbagai fasilitas di sekitarnya. Beberapa '
+          'fasilitas sekitar Coban Rondo yaitu camping ground, jogging track, tempat pemancingan, penginapan, hingga lintas sepeda gunung. '
+          'Tak salah jika Coban Rondo menjadi salah satu andalan wisata Batu.'
+          'Buka dari jam 08.00-16.00, Coban Rondo yang terletak di Kecamatan Pujon ini mematok harga tiket di kisaran Rp 35.000 - Rp 40.000.'
+          'Oleh Widya Indah Puspita Sari - 2141720034',
         softWrap: true,
         textAlign: TextAlign.justify,
       ),
@@ -383,9 +370,10 @@ Tambahkan widget variabel `textSection` ke dalam `body` seperti berikut:
 ```
 
 ### Hasil
-<img src="./docs/p3-hasil.jpg" alt="Screenshot" height="600">
 
-## **Praktikum 3: Implementasi Image Section**
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/334efe25-855f-4b3a-8a27-1cf0cccf9693)
+
+## **Praktikum 4: Implementasi Image Section**
 
 ### Langkah 1: Siapkan Aset Gambar
 Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder `images` di root project **layout_flutter**. Masukkan file gambar tersebut ke folder `images`, lalu set nama file tersebut ke file `pubspec.yaml` seperti berikut:
@@ -418,7 +406,7 @@ Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder `im
         body: ListView( /*Change to ListView*/
           children: [
             /*Add Image Section*/
-            Image.asset('assets/gunung_panderman.jpg',
+            Image.asset('assets/CR.jpg',
             width: 600,
             height: 240,
             fit: BoxFit.cover,
@@ -432,18 +420,8 @@ Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder `im
         ),
 ```
 ### Hasil
-<img src="./docs/p4-hasil.jpg" alt="Screenshot" height="600">
 
-# **Tugas Praktikum**
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/460d865b-a278-4d90-a904-34066fa057f5)
 
-1. Selesaikan Praktikum 1 sampai 4, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file `README.md`!
-### Jawaban: 
-Done
+Link Repository :
 
-2. Silakan implementasikan di project baru **"basic_layout_flutter"** dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
-### Jawaban:
-[Basic Layout Flutter - Lailatul Badriyah](https://github.com/lailatulbadriyah24/2141720036-mobile-2023/blob/main/week-07/src/basic_layout_flutter/README.md).
-
-3. Kumpulkan link commit repository GitHub Anda ke spreadsheet yang telah disediakan!
-### Jawaban: 
-Done
