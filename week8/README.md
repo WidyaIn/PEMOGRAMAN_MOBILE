@@ -14,8 +14,8 @@ Selesaikan langkah-langkah praktikum berikut ini menggunakan editor Visual Studi
 
 Tampilan akhir yang akan Anda buat
 
-![Output](docs/practice/result.png)
-![Output](docs/practice/result1.png)
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/1055782b-54bf-4cfb-add6-01f7275c82ed)
+
 
 Pada praktikum 5 ini anda akan belajar mengenai pembangunan aplikasi bergerak multi halaman. Aplikasi yang dikembangkan berupa kasus daftar barang belanja. Pada aplikasi ini anda akan belajar untuk berpindah halaman dan mengirimkan data ke halaman lainnya. Gambaran mockup hasil akhir aplikasi dapat anda lihat pada gambar di atas (mockup dibuat sederhana, sehingga Anda mempunyai banyak ruang untuk berkreasi). Desain aplikasi menampilkan sebuah `ListView` widget yang datanya bersumber dari `List`. Ketika item ditekan, data akan dikirimkan ke halaman berikutnya.
 
@@ -23,7 +23,7 @@ Pada praktikum 5 ini anda akan belajar mengenai pembangunan aplikasi bergerak mu
 
 Sebelum melanjutkan praktikum, buatlah sebuah project baru Flutter dengan nama belanja dan susunan folder seperti pada gambar berikut. Penyusunan ini dimaksudkan untuk mengorganisasi kode dan widget yang lebih mudah.
 
-![Output](docs/practice/step1.png)
+![image](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/ac61a327-dd4e-499a-b2d5-a2cdf1fa43da)
 
 **Langkah 2: Mendefinisikan Route**
 
@@ -136,7 +136,8 @@ Jalankan aplikasi kembali dan pastikan ListView dapat disentuh dan berpindah ke 
 
 **Output Praktikum**
 
-![screen.gif](docs/practice/result_practice.gif)
+![result_practice](https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/assets/91048154/4b6015b6-37a5-4cd9-8193-0ea9129423f8)
+
 
 **Tugas Praktikum**
 
