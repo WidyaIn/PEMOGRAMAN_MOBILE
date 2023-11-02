@@ -2,7 +2,7 @@
 ## Nama : Widya Indah Puspita Sari
 ## Kelas : TI-3A
 ## NIM : 2141720034
-### Github : 
+### Github : https://github.com/WidyaIn/PEMOGRAMAN_MOBILE/tree/8a7fb78f752c1452fbcb64098e60f6025700a314/week10/flutter_plugin_pubdev
 
 ### Langkah 1 : Buat Project Baru
 Buatlah sebuah project flutter baru dengan nama flutter_plugin_pubdev. Lalu jadikan repository di GitHub Anda dengan nama flutter_plugin_pubdev.
